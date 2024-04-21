@@ -64,66 +64,28 @@
                 </div>
     
                 <div class="activityData">
-                    <span id="postLikes" class="likes controlsTextContent">
+                    <div id="postLikes" class="activityDataItem likes controlsTextContent">
                         <img class="iconHearth clickableItem" src="./assets/icons/hearthGrey.svg" alt="like">
-                        46
-                    </span>
-                    <span id="postComments" class="comments controlsTextContent ">
+                        <span>46</span>
+                    </div>
+                    <div id="postComments" class="activityDataItem comments controlsTextContent ">
                         <img class="clickableItem" src="./assets/icons/comment.svg" alt="comment">
-                        12
-                    </span>
+                        <span>12</span>
+                    </div>
                     <span class="share controlsTextContent clickableItem">
                         <img src="./assets/icons/share.svg" alt="share">
                     </span>
                 </div>
     
                 <div class="postComments">
-                    <div class="commentsList">
-                        <div class="commentItem">
-                            <img class="commentAuthorImage" src="./assets/images/profile1.png" alt="person">
-                            <div class="commentData">
-                                <div class="comentAuthorName">Emily Fray</div>
-                                <div class="commentText">Really cool! ✌ I love it!🌏 </div>
-                                <div class="controls">
-                                    <span class="likes controlsTextContent">
-                                        <img class="iconHearth clickableItem" src="./assets/icons/hearthGrey.svg" alt="like">
-                                        2
-                                    </span>
-                                    <span class="replay controlsTextContent">
-                                        <img class="clickableItem" src="./assets/icons/reply.svg" alt="reply">
-                                    </span>
-                                </div>
-                            </div>
-                            <span class="additionalInfo commentDate">
-                                1d
-                            </span>
-                        </div>
-    
-                        <div class="commentItem">
-                            <img class="commentAuthorImage" src="./assets/images/profile2.png" alt="person">
-                            <div class="commentData">
-                                <div class="comentAuthorName">Esther Howard</div>
-                                <div class="commentText">I would also love to visit there! The best place for me. Will definitely go back there again with my family ☘💕 </div>
-                                <div class="controls">
-                                    <span class="likes controlsTextContent">
-                                        <img class="iconHearth" src="./assets/icons/hearthGrey.svg" alt="like">
-                                        2
-                                    </span>
-                                    <span class="replay controlsTextContent">
-                                        <img src="./assets/icons/reply.svg" alt="reply">
-                                    </span>
-                                </div>
-                            </div>
-                            <span class="additionalInfo commentDate">
-                                1d
-                            </span>
-                        </div>
+                    <div id="commentsList" class="commentsList">
+                        <!-- comments here -->
                     </div>
                     <div class="commentInput">
                         <div class="userCircle">
                             M
                         </div>
-                        <input class="input" placeholder="Comment here..." type="text">
+                        <input id="commentInput" class="input" placeholder="Comment here..." type="text">
                     </div>
                 </div>
             </div>
@@ -169,6 +131,7 @@
         </section>
     </main>
     
-    <script src="script.js"></script>
+    <script src="comments.js"></script>
+    <script src="likes.js"></script>
 </body>
 </html>

@@ -85,11 +85,11 @@
     margin-top: var(--control-gap-large);   
 }
 
-#main .post .activityData span img{
+#main .post .activityData .activityDataItem img{
     margin-right: var(--icon-gap-small);
 }
 
-#main .post .activityData span:not(:last-child){
+#main .post .activityData .activityDataItem:not(:last-child){
     margin-right: var(--default-gap);
 }
 
@@ -123,10 +123,16 @@
 #main .post .postComments .commentsList .commentItem .commentAuthorImage{
     width: var(--comment-author-image-size);
     height: var(--comment-author-image-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--general-dark);
+    color: var(--general-light);
+    border-radius: 50%;
     margin-right: var(--comment-image-gap);
 }
 
-#main .post .postComments .commentsList .commentItem .commentData .comentAuthorName{
+#main .post .postComments .commentsList .commentItem .commentData .commentAuthorName{
     font-weight: 600;
 }
 
