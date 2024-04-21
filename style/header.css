@@ -1,0 +1,23 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: var(--header-bg);
+    height: var(--header-height);
+    box-shadow: var(--header-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--header-padding);
+}
+
+#header .menuToggler{
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    background: var(--tag-color);
+    padding: var(--menu-toggler-padding);
+}

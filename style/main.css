@@ -1,0 +1,253 @@
+#main{
+    margin-top: var(--header-height);;
+    display: grid;
+    gap: var(--main-content-gap);
+    padding: var(--main-content-padding);
+    grid-template: "a" 
+                   "b" 
+                   "c";
+}
+
+#main section{
+    background-color: var(--main-content-bg);
+}
+
+/* Author info */
+
+#main .authorInfo{
+    grid-area: a;
+    padding: var(--main-autor-card-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: var(--card-top-border-radius);
+}
+
+#main .authorInfo h3{
+    margin-top: 17px;
+}
+
+#main .authorInfo .supporters{
+    margin-top: 12px;
+}
+
+#main .authorInfo button{
+    margin-top: var(--control-gap-large);
+}
+
+/* Post */
+
+#main .post{
+    grid-area: b;
+    border-radius: var(--card-border-radius);
+    padding: var(--main-post-card-padding);
+    
+}
+
+#main .post .postSectionContent{
+    max-width: var(--post-section-max-width);
+    margin: 0 auto;
+}
+
+#main .post .backToLink img{
+    margin-right: var(--icon-gap);
+}
+
+#main .post .tag{
+    margin-top: var(--control-gap-large);
+}
+
+#main .post .postTitle{
+    margin-top: var(--default-gap);
+}
+
+#main .post .postDate{
+    display: block;
+    margin-top: 15px;
+}
+
+#main .post .postContent{
+    margin-top: var(--control-gap-large);
+}
+
+#main .post .postContent p:not(:last-child){
+    margin-bottom: var(--text-gap);
+}
+
+#main .post .postContent img{
+    margin: calc(var(--control-gap-large) - var(--text-gap)) 0 var(--control-gap-large);
+}
+
+#main .post .activityData{
+    display: flex;
+    align-items: center; 
+    margin-top: var(--control-gap-large);   
+}
+
+#main .post .activityData span img{
+    margin-right: var(--icon-gap-small);
+}
+
+#main .post .activityData span:not(:last-child){
+    margin-right: var(--default-gap);
+}
+
+#main .post .activityData .likes{
+    color: var(--like-text-color);
+}
+
+#main .post .activityData .likes .iconHearth{
+    height: 24px;
+    width: 24px;
+}
+
+#main .post .activityData .comments{
+    color: var(--additional-info-color);
+}
+
+#main .post .postComments{
+    margin-top: var(--comments-gap);
+    border-top: 1px solid var(--divider-color);
+    padding-top: var(--comments-gap);
+}
+
+#main .post .postComments .commentsList .commentItem{
+    display: flex;
+}
+
+#main .post .postComments .commentsList .commentItem:not(:last-child){
+    margin-bottom: var(--comments-gap);
+}
+
+#main .post .postComments .commentsList .commentItem .commentAuthorImage{
+    width: var(--comment-author-image-size);
+    height: var(--comment-author-image-size);
+    margin-right: var(--comment-image-gap);
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .comentAuthorName{
+    font-weight: 600;
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .commentText{
+    margin-top: var(--commnet-content-gap);
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .controls{
+    margin-top: var(--commnet-content-gap);
+    display: flex;
+    align-items: center;
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .controls span{
+    color: var(--additional-info-color);
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .controls span:not(:last-child){
+    margin-right: var(--comment-controls-gap);
+}
+
+#main .post .postComments .commentsList .commentItem .commentData .controls span img{
+    margin-right: var(--icon-gap-small);
+}
+
+#main .post .postComments .commentsList .commentItem .commentDate{
+    display: block;
+    margin-left: auto;
+}
+
+#main .post .postComments .commentInput{
+    margin-top: var(--control-gap-large);
+    display: flex;
+    align-items: center;
+}
+
+
+#main .post .postComments .commentInput .userCircle{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--general-dark);
+    margin-right: var(--comment-image-gap);
+    height: var(--comment-author-image-size);
+    width: var(--comment-author-image-size);
+}
+
+#main .post .postComments .commentInput .input{
+    flex-grow: 1;
+}
+
+/* Recent posts */
+
+#main .recentPosts{
+    grid-area: c;
+    border-radius: var(--card-border-radius);
+    padding: var(--recent-posts-card-padding);
+}
+
+#main .recentPosts .recentPostsList{
+    margin-top: var(--text-gap)
+}
+
+#main .recentPosts .recentPostsList .recentPostItem{
+    display: flex;
+    padding: var(--recent-item-padding);
+}
+
+#main .recentPosts .recentPostsList .recentPostItem:not(:last-child){
+    border-bottom: 1px solid var(--recent-post-divider-color);
+}
+
+#main .recentPosts .recentPostsList .recentPostItem img{
+    margin-right: var(--comment-image-gap);
+    height: var(--recent-post-imagee-size);
+    width: var(--recent-post-imagee-size);
+}
+
+#main .recentPosts .recentPostsList .recentPostItem .recentPostContent{
+    font-weight: 500;   
+}
+
+#main .recentPosts .recentPostsList .recentPostItem .recentPostContent span{
+    display: block;
+    margin-top: var(--recent-post-date-gap);
+    font-weight: 400;
+    font-size: var(--font-szie-small);
+}
+
+@media (min-width: 768px) and (max-width: 1312px) {
+    #main .authorInfo{
+        align-items: end;
+        padding: 32px calc((100% - var(--post-section-max-width))/2);
+    }
+    #main .authorInfo .authorImage{
+        height: 100%;
+        margin-right: auto;
+    }
+    #main .authorInfo .authorName{
+        font-size: 32px;
+    }
+    #main .authorInfo .supporters{
+        font-size: 20px;
+    }
+    #main .authorInfo .button{
+        margin-top: auto;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 1312px) {
+    #main{
+        margin: 0 auto;
+        grid-template: "b a"
+                       "b c"
+                       "b 0"  / 1fr 480px ;
+    }
+    
+    #main .post{
+        border-radius: var(--card-top-border-radius);
+    } 
+}

@@ -1,0 +1,80 @@
+:root{
+    /* Colors */
+    --bg-color: #E1E1E1;
+    --header-bg: #FFFFFF;
+    --main-content-bg: #FFFFFF;
+    --general-dark: #191919;
+    --general-light: #FFFFFF;
+    --tag-color: #F3F3F3;
+    --like-text-color: #424242;
+    --divider-color: #CFCFCF;
+    --recent-post-divider-color: #E6E6E6;
+    --additional-info-color: #707070;
+
+    /* Sizes */
+    --header-height: 48px;
+    --comment-author-image-size: 42px;
+    --recent-post-imagee-size: 48px;
+    --post-section-max-width: 760px;
+
+    /* Fonts */
+    --font-size-default: 16px;
+    --font-szie-small: 14px;
+
+    /* Gaps */
+    --default-gap: 24px;
+    --main-content-gap: 16px;
+    --icon-gap: 8px;
+    --icon-gap-small: 4px;
+    --control-gap-large: 32px;
+    --text-gap: 24px;
+    --comments-gap: 24px;
+    --commnet-content-gap: 6px;
+    --comment-image-gap: 12px;
+    --comment-controls-gap: 20px;
+    --recent-post-date-gap: 6px;
+
+    /* Paddings */
+    --header-padding: 0 12px;
+    --main-autor-card-padding: 32px 16px;
+    --main-post-card-padding: 20px 16px;
+    --recent-posts-card-padding: 24px;
+    --controls-padding: 14px 32px 18px;
+    --input-padding: 10px 16px 14px;
+    --tag-padding: 7px 16px 11px;
+    --main-content-padding: 0 16px 40px;
+    --recent-item-padding: 12px 0;
+    --menu-toggler-padding: 4px 10px 4px 4px;
+
+    /* Border radiuses */
+    --controls-border-radius: 8px;
+    --card-border-radius: 8px;
+    --card-top-border-radius: 0 0 8px 8px;
+
+    /* Effects */
+    --header-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
+    --transition-duration: .3s;
+    --transition-duration-fast: .1s;
+    
+}
+
+@media (min-width: 1312px) {
+    :root{
+        --header-height: 72px;
+        --comment-author-image-size: 48px;
+        --recent-post-imagee-size: 56px;
+        --main-content-gap: 24px;
+        --text-gap: 32px;
+        --comments-gap: 32px;
+        --comment-image-gap: 16px;
+        --commnet-content-gap: 8px;
+        --control-gap-large: 40px;
+        --header-padding: 0 16px;
+        --main-autor-card-padding: 48px 24px;
+        --recent-posts-card-padding: 32px;
+        --main-post-card-padding: 40px 24px;
+        --main-content-padding: 0 0 72px;
+        --input-padding: 13px 16px 17px;
+        --recent-item-padding: 16px 0;
+    }
+}
