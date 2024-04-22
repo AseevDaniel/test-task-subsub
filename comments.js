@@ -39,7 +39,7 @@ function inputKeyPress(e) {
         name: "No Name",
         text: e.target.value,
         date: "Today",
-        reply: []
+        replys: []
     }
 
     if(currentActiveReply || currentActiveReply === 0){
