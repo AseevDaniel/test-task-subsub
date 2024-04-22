@@ -50,6 +50,10 @@
     margin: 0 auto;
 }
 
+#main .post .backToLink:hover img{
+    transform: translateX(-5px);
+}
+
 #main .post .backToLink img{
     margin-right: var(--icon-gap);
 }
@@ -114,9 +118,26 @@
 
 #main .post .postComments .commentsList .commentItem{
     display: flex;
+    flex-wrap: wrap;
 }
 
-#main .post .postComments .commentsList .commentItem:not(:last-child){
+#main .post .postComments .commentsList .replyItem{
+    flex-wrap: nowrap;
+    padding-left: var(--main-content-gap);
+    margin-top: var(--control-gap-large);
+    margin-left: var(--control-gap-large);
+    border-left: 1px solid var(--divider-color);
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#main .post .postComments .commentsList .replyItem.commentInput{
+    /* margin-top: 0; */
+    width: 100%;
+    border: none;
+}
+
+#main .post .postComments .commentsList .mainComment:not(:last-child){
     margin-bottom: var(--comments-gap);
 }
 
@@ -130,6 +151,10 @@
     color: var(--general-light);
     border-radius: 50%;
     margin-right: var(--comment-image-gap);
+}
+
+#main .post .postComments .commentsList .commentItem .commentData{
+    flex: 1;
 }
 
 #main .post .postComments .commentsList .commentItem .commentData .commentAuthorName{
